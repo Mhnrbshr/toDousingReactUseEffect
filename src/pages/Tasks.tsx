@@ -10,7 +10,7 @@ const Tasks = ({task,changeStatus}:TaskComponentPropType) => {
         <Card.Body className='px-5'>
             <Form.Check
       label= {task.title}
-      checked={task.status=="complete"?true:false}
+      checked={task.status==="complete"?true:false}
       onChange={(e)=> {changeStatus(e)}}
       value = {task.id}
       />
